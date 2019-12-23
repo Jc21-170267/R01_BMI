@@ -27,7 +27,7 @@ namespace R01_BMI
 
             double x = ww / (hh / 100 * hh / 100);
             double a = Math.Round(x, MidpointRounding.AwayFromZero);
-            anser.Text = "BMIは" + a + "です。";
+            answer.Text = "BMIは" + a + "です。";
         }
     }
 }
