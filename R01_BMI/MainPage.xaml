@@ -8,9 +8,25 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="BMI計算" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="身長を入力(cm)" />
+            <Entry x:Name="sintyou" MaxLength="3" Placeholder="身長を入力" />
+
+            <Label Text="体重を入力(kg)" />
+            <Entry x:Name="taijyu" MaxLength="2" Placeholder="体重を入力" />
+
+            <Button Text="BMIを計算する" 
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                        Clicked="Button_Cliced"/>
+            <Label x:Name="anser"
+                   Text="ボタンを押すとBMIを計算します" />
+
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
