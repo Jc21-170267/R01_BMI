@@ -17,5 +17,17 @@ namespace R01_BMI
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            String h = sintyou.Text;
+            String w = taijyu.Text;
+            double hh = double.Parse(h);
+            double ww = double.Parse(w);
+
+            double x = ww / (hh / 100 * hh / 100);
+            double a = Math.Round(x, MidpointRounding.AwayFromZero);
+            anser.Text = "BMIは" + a + "です。";
+        }
     }
 }

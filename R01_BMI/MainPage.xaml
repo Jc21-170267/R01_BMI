@@ -22,8 +22,8 @@
             <Button Text="BMIを計算する" 
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
-                        Clicked="Button_Cliced"/>
-            <Label x:Name="anser"
+                        Clicked="Button_Clicked"/>
+            <Label x:Name="answer"
                    Text="ボタンを押すとBMIを計算します" />
 
         </StackLayout>
